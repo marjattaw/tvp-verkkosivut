@@ -1,0 +1,108 @@
+/* Yleiset tyylit */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Otsikkotyylit */
+h1 {
+    color: #333;
+    font-size: 2em; /* Iso pääotsikko */
+}
+
+h2 {
+    color: #555;
+    font-size: 1.5em; /* Keskikokoinen otsikko */
+    margin-top: 1em;
+}
+
+h3 {
+    color: #777;
+    font-size: 1.2em; /* Pieni boldattu otsikko */
+    font-weight: bold;
+    margin-top: 0.8em;
+}
+
+/* Responsiivisuus mobiililaitteille */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+/* Taulukon perusasetukset */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #333;
+    text-align: center; /* Keskittää tekstin vaakasuunnassa */
+    vertical-align: middle; /* Keskittää tekstin pystysuunnassa */
+}
+
+/* Otsikkorivin tyyli */
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Arvosanojen väritykset */
+.grade-1 {
+    background-color: #ffdddd; /* Vaaleanpunainen */
+}
+
+.grade-2 {
+    background-color: #ffebcc; /* Vaalea oranssi */
+}
+
+.grade-3 {
+    background-color: #ffffcc; /* Vaalea keltainen */
+}
+
+.grade-4 {
+    background-color: #ddffdd; /* Vaalea vihreä */
+}
+
+.grade-5 {
+    background-color: #cce5ff; /* Vaalea sininen */
+}
+
+/* Vuorotteleva rivin taustaväri */
+tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
